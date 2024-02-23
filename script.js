@@ -1,6 +1,6 @@
 // complete this js code
-class Person {
-  constructor(name, age) {
+function Person(name, age) {
+	 constructor(name, age) {
     this.name = name;
     this.age = age;
   }
@@ -10,8 +10,8 @@ class Person {
   }
 }
 
-class Employee extends Person {
-  constructor(name, age, jobTitle) {
+function Employee(name, age, jobTitle) {
+	constructor(name, age, jobTitle) {
     super(name, age);
     this.jobTitle = jobTitle;
   }
@@ -20,6 +20,7 @@ class Employee extends Person {
     console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
   }
 }
+Employee.prototype = new Person;
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
