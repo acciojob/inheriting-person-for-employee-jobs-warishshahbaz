@@ -1,9 +1,5 @@
 // complete this js code
 
-To fix the code, we need to correct the syntax errors and ensure that the inheritance is properly set up. Here's the corrected version:
-
-javascript
-Copy code
 function Person(name, age) {
   this.name = name;
   this.age = age;
